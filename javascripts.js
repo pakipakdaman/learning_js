@@ -64,5 +64,5 @@ setInterval(() => {
         }else{
                 title.textContent = "Hello parsa"
         }
-        
+        showingparsa = !showingparsa;
 }, 1000);   
