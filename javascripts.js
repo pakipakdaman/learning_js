@@ -44,7 +44,25 @@ for (let i=1; i<=5; i++){
 const car = {
         brand : "toyota",
         model : "x12",
-        year : 2024
+        year : 2024,
+        describe(){
+                console.log(this.model);
+        }
 }
 console.log(car.brand)
 console.log(car)
+car["IsElectric"] = true;
+console.log(car.IsElectric);
+car.describe();
+
+title = document.querySelector("#title");
+console.log(title);
+let showingparsa = flase;
+setInterval(() => {
+        if (showingparsa){
+                title.textContent = "Hello World";
+        }else{
+                title.textcontent = "Hello parsa"
+        }
+        
+}, 1000);   
