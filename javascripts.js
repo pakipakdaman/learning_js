@@ -55,14 +55,14 @@ car["IsElectric"] = true;
 console.log(car.IsElectric);
 car.describe();
 
-title = document.querySelector("#title");
+const title = document.querySelector("#title");
 console.log(title);
-let showingparsa = flase;
+let showingparsa = false;
 setInterval(() => {
         if (showingparsa){
                 title.textContent = "Hello World";
         }else{
-                title.textcontent = "Hello parsa"
+                title.textContent = "Hello parsa"
         }
         
 }, 1000);   
