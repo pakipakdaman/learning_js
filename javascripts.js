@@ -1,4 +1,4 @@
-const name = "parsa";
+/*const name = "parsa";
 let age = 23;
 const islearningjs= true;
 
@@ -40,6 +40,10 @@ for(const fruit of fruits){
 for (let i=1; i<=5; i++){
         console.log(i);
 }
+fruits.forEach((fruit) => {
+        console.log(fruit);
+})
+
 
 const car = {
         brand : "toyota",
@@ -66,3 +70,81 @@ setInterval(() => {
         }
         showingparsa = !showingparsa;
 }, 1000);   
+let colorofparsa = false;
+setInterval(() => {
+        if (colorofparsa){
+                title.style.color = "red"
+        }else{
+                title.style.color = "blue"
+        }
+        colorofparsa =! colorofparsa
+
+}, 1000);
+title.style.backgroundColor = "yellow";
+let flag = false;
+const button = document.querySelector("#button");
+button.addEventListener("click", () =>{
+        if (flag === false){
+                title.style.backgroundColor = "purple";
+                flag = true;
+        }else{
+                title.style.backgroundColor = "yellow";
+                flag = false;
+        }})
+*/
+ const numbers = [10, 20, 30, 40, 50]
+ numbers.forEach((number) =>{
+        console.log("number = "+ number)
+        console.log(2 * number)
+ })   
+const numberss = [5, 10, 15, 20, 25];
+const triple = numberss.map((number) => {
+        return number * 3
+})
+console.log(triple)
+const numbersss = [10, 20, 30, 40, 50];
+const half = numbersss.map((number) => {
+        return number / 2
+})
+console.log(half)
+const numberssss = [2, 4, 6, 8, 10];
+const powerof2 = numberssss.map((number) =>{
+        return number * number
+})
+console.log(powerof2)
+const names = ["parsa", "ali", "sara", "mike"];
+const UpperCase = names.map((upper) => {
+        return upper.toUpperCase()
+})
+console.log(UpperCase)
+const num = [10, 15, 20, 25, 30, 35, 40];
+const filt = num.filter((filter) => {
+        return filter>= 30;
+})
+console.log(filt)
+const numbe = [5, 12, 18, 25, 30, 40];
+const finder = numbe.find((find25) => {
+        return find25 > 20 ;
+}) 
+console.log(finder)
+const numbersx = [5, 10, 15, 20, 25];
+const total = numbersx.reduce((sum,number) => {
+        return sum + number
+}, 0)
+console.log(total)
+const numbersy = [2, 4, 6, 8]; 
+const total2 = numbersy.reduce((sum,number) => {
+        return sum * number
+}, 1)
+console.log(total2)
+const numbersu = [5, 12, 8, 20, 3, 15];
+const final = numbersu.filter((filter) => {
+        return filter > 10;
+})
+const final2 = final.map((map) =>{
+        return 2 * map
+})
+const final3 = final2.reduce((sum,number) => {
+        return sum + number
+},0)
+console.log(final,final2,final3)
