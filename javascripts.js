@@ -1,3 +1,5 @@
+/*import { greet, goodbye } from "./train.js"*/
+import greet from "./train.js"
 /*const name = "parsa";
 let age = 23;
 const islearningjs= true;
@@ -5,8 +7,6 @@ const islearningjs= true;
 console.log(name);
 console.log(age);
 console.log(islearningjs);
-
-
 
 function sum(a,b){return a + b;}      
 const result = sum(5,10);
@@ -148,3 +148,5 @@ const final3 = final2.reduce((sum,number) => {
         return sum + number
 },0)
 console.log(final,final2,final3)
+greet("parsa");
+/*goodbye("parsa");*/
