@@ -150,3 +150,33 @@ const final3 = final2.reduce((sum,number) => {
 console.log(final,final2,final3)
 greet("parsa");
 /*goodbye("parsa");*/
+/*const promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("hello parsa");
+            reject("failed");  
+        },2000)     
+})*/
+/*promise.catch((result) => {
+        console.log(result)
+})*/
+/*async function test(){
+        const result = await promise
+        console.log(result)
+}
+test();*/
+const promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+                reject("failed");
+        
+}, 200);
+})
+async function test(){
+        try{
+                const result = await promise
+                console.log(result)
+        } catch(error)
+        {
+           console.log(error)
+        }
+}
+test();
